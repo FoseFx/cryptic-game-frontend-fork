@@ -1,5 +1,5 @@
 <div class="window" (mousedown)="windowManager.focusWindow(delegate);"
-     (document:mouseup)="resizing = false;" [style.display]="delegate.position.minimized ? 'none' : 'flex'"
+     (document:mouseup)="resizing = false;"
      [class.active]="delegate.position.active" [class.maximized]="delegate.position.maximized"
      [style.width.px]="delegate.position.width"
      [style.height.px]="delegate.position.height">

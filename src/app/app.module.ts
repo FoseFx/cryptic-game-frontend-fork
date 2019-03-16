@@ -20,6 +20,7 @@ import { PXtoViewHeightPipe } from './pxto-view-height.pipe';
 import { WindowFrameComponent } from './desktop/window/window-frame.component';
 import { WindowManagerComponent } from './desktop/window-manager/window-manager.component';
 import { TestWindowComponent } from './desktop/windows/test-window/test-window.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 const routes: Routes = [
   { path: '', component: DesktopComponent, canActivate: [DesktopGuard] },
@@ -47,6 +48,7 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes),
     BrowserModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     FormsModule
   ],
